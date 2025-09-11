@@ -1,0 +1,6 @@
+Hypertext Preprocessor - PHP
+
+Install PHP on WSL
+    sudo apt install php-cli php-mbstring php-xml php-curl php-mysql unzip git -y
+check version 
+    php -v
