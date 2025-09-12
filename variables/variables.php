@@ -62,3 +62,16 @@
     }
 ?>
 
+// integers
+// division of integers
+<?php
+    $x = 10;
+    $y = 4;
+    echo $x / $y; // outputs 2.5
+?>
+
+//float
+<?php
+    $x = 10.5;
+    var_dump($x);
+?>

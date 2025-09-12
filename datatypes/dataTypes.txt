@@ -1,0 +1,57 @@
+PHP supports the following data types:
+
+String
+Integer
+Float (floating point numbers - also called double)
+Boolean
+Array
+Object
+NULL
+Resource
+
+Getting the data type 
+    -use the var_dump() fn 
+
+1.string 
+    $x = "Hello";
+    var_dump($x);
+
+2 . float 
+    $x = 10.25
+    var_dump($x)
+
+3. integer 
+    $x = 10
+    var_dump($x)
+
+4 . Boolean
+    $x = true;
+    var_dump($x)
+
+5. Array
+    $fruits  = array ("Mango", "Orange " ,"guava ")
+    var_dump($fruits);
+
+6. Object
+    classes and objects are the main aspects of OOP
+    class = template for objects
+    object = instance of a class
+
+eg 
+    class Car{
+        public $color;
+        public $model:
+        public function __construct ($color , $model){
+            %this-> color = $color;
+            $this->model = $model;
+        }
+        public function message() {
+            return "My car is a " . $this->color . " " . $this->model . "!";
+        }
+        }
+
+        $myCar = new Car("red", "Volvo");
+        var_dump($myCar);
+
+        }
+    }

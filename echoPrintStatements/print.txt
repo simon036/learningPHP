@@ -1,0 +1,24 @@
+PHP print Statement
+
+print statement can be used with or without parentheses ie print  or print()
+
+eg print "hello";
+        is same as 
+    print ("hello");
+
+Display text
+        print "<h2>This is PHP!</h2>";
+        print "Hello world!<br>";
+        print "I'm learning PHP!";
+
+Display Variables
+        $namee1 = "PHP";
+        $name2 = "Laravel"
+
+        print "<h2> $name1 </h2>";
+        print "<p> Seccont language name id $name2 </p>;
+
+
+Using Single Quotes
+
+same case for echo as in echo.txt
