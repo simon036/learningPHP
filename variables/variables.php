@@ -14,6 +14,51 @@
     $is_student = true;
     $price = 19.99;
     $txt = "Hello, PHP!";
-    echo "I love $txt !";
+    echo "I love $txt!" . "<br>"; // interpolation
     // echo "I love " . $txt . " !"; // concatenation
+    echo $x + $y;
 ?>
+
+/*
+ php data types:
+    1. String  
+    2. Integer
+    3. Float
+    4. Boolean
+    5. Array
+    6. Object
+    7. NULL
+    8. Resource
+*/
+
+// getting the data type 
+
+<?php
+    $z = 5;
+    var_dump($z); // var_dump() fn returns data type and the value
+?>
+
+
+// assinginig string to variable
+<?php
+    $x = "Simon";
+    echo $x;
+?>
+
+// assigning multiple  variables
+<?php 
+    $x = $y =$z = "Orange";
+
+?>
+
+// booleans ==true or false
+<?php
+    $name = True;
+?>
+
+<?php
+    if ($firstName = "Simon" ){
+        echo " The first name is $firstName";
+    }
+?>
+
