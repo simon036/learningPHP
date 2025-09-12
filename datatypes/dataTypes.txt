@@ -55,3 +55,33 @@ eg
 
         }
     }
+
+7. Null value
+has no value assigned to it
+ $x = null ;
+ var_dump($x)
+
+8 . changing a data type 
+if you assign a string to same variable ie that had an int , the type will change to a string 
+
+example
+    $x = 5;
+    var_dump($x);
+
+    $x = "Hello";
+    var_dump($x);
+
+If you want to change the data type of an existing variable, but not by changing the value, you can use casting
+Casting allows one to change data type on variables
+
+example 
+        $x = 5;
+        $x = (string) $x;
+        var_dump($x)    
+
+
+9. Resource
+
+The special resource type is not an actual data type. It is the storing of a reference to functions and resources external to PHP.
+
+A common example of using the resource data type is a database call
