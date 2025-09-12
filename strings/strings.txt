@@ -1,0 +1,90 @@
+Strings surrounded by either double quotation or single quotation marks
+
+Double quoted strings returns value of variable
+example = 
+            $x = "John";
+            echo "Hello $x";
+
+Single quoted strings returns string as it was written with variable name
+
+example = 
+            $x = "John";
+            echo 'Hello $x';
+
+string functions
+1 . length    
+ strlen()
+        example =
+        echo strlen("Hello world!");
+
+2. word count      
+ str_word_count()
+
+ example == 
+            echo str_word_count("Hello world!");
+
+3. searching for a text within a string 
+    strpos()    =  fn searches for a specific text within a string
+    if found ,fn returns xter position of first match
+    if not fount , it returns false 
+
+exmple  = 
+            echo strpos("Hello world!", "world");
+
+MODIFYING STRINGS
+
+4. uppercase 
+    strtoupper()
+
+    example  ==  
+            $x = "Hello World!";
+            echo strtoupper($x);
+
+5. lover case 
+    strtolower() 
+    example ==  
+                $x = "Hello World!";
+                echo strtolower($x);
+
+6. replace string 
+    str_replace()   fn replaces some xters with some other xters in a string
+
+        example =  
+                $x = "Hello World!";
+                echo str_replace("World", "Dolly", $x);
+
+7 . reverse a string 
+     strrev() function reverses a string.
+            example  ==
+                $x = "Hello World!";
+                echo strrev($x);
+
+8. removes whitespace
+    trim() = removes any whitespace before or after 
+        example == 
+            $x = " Hello World! ";
+            echo trim($x);
+
+9 . converting string to array
+        explode() function splits a string into an array.
+    example == 
+        $x = "Hello World!";
+        $y = explode(" ", $x);
+        //Use the print_r() function to display the result:
+        print_r($y);
+
+
+CONCATENATE STRINGS
+to combine /concatenate use the . operator 
+example = 
+        $x = "Hello";
+        $y = "World";
+        $z = $x . $y;
+        echo $z;
+
+adding space xter 
+example = 
+        $x = "Hello";
+        $y = "World";
+        $z = $x . " " . $y;
+        echo $z;
