@@ -1,0 +1,58 @@
+LOOPS = used to execute same block of code again and again as long as condition is true
+
+1. while loop = loops through block of code as long as condition is true
+2.do while loop = loops through block of code once ans then repeats loop as long as specified condition is true
+3. for loop = loops through block of code a specified no. of times
+4. for each = loops via code block for each element in an array
+
+1 . WHILE LOOP 
+loops through block of code as long as condition is true
+
+example ;
+    Print $i as long as $i is less than 6:
+
+            $i = 1;
+            while ($i < 6) {
+            echo $i;
+            $i++;
+            }
+Note: remember to increment $i, or else the loop will continue forever.
+
+BREAK STATEMENT 
+break statement stops loop even if condition is still true
+
+example;
+Stop the loop when $i is 3:
+
+    $i = 1;
+    while ($i < 6) {
+    if ($i == 3) break;
+    echo $i;
+    $i++;
+    }
+
+CONTINUE STATEMENT
+continue statement stops current iteration and continue with the next
+
+example;
+Stop, and jump to the next iteration if $i is 3:
+
+        $i = 0;
+        while ($i < 6) {
+        $i++;
+        if ($i == 3) continue;
+        echo $i;
+        }
+
+    alternative 
+        The while loop syntax can also be written with the endwhile statement like this
+
+        Example
+        Print $i as long as $i is less than 6:
+
+                $i = 1;
+                while ($i < 6):
+                echo $i;
+                $i++;
+                endwhile;
+
