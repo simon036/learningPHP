@@ -1,0 +1,17 @@
+Ternary Operators, or Conditional Expressions
+
+Short hand if 
+example;
+        $a = 5;
+
+        if ($a < 10) $b = "Hello";
+
+        echo $b
+
+short hand if/else
+example ;
+        $a = 13;
+
+        $b = $a < 10 ? "Hello" : "Good Bye";
+
+        echo $b
