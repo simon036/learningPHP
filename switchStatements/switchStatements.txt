@@ -1,0 +1,85 @@
+Switch statements selects one of many blocks of code to be executed
+
+syntax
+    switch (expression) {
+        case label1:
+            //code 
+            break;
+        case label2:
+            //code 
+            break;
+        case label3:
+            //code 
+            break;
+        default:
+            //code 
+    }
+
+how it works:
+
+The expression is evaluated once
+The value of the expression is compared with the values of each case
+If there is a match, the associated block of code is executed
+The break keyword breaks out of the switch block
+The default code block is executed if there is no match
+
+example ;
+    $favcolor = "red";
+
+        switch ($favcolor) {
+        case "red":
+            echo "Your favorite color is red!";
+            break;
+        case "blue":
+            echo "Your favorite color is blue!";
+            break;
+        case "green":
+            echo "Your favorite color is green!";
+            break;
+        default:
+            echo "Your favorite color is neither red, blue, nor green!";
+    }
+
+
+BREAK KEYWORD
+break = breaks out the switch block
+
+DEFAULT KEYWORD
+default =  specifies the code to run if there is no case match
+
+example ;
+If no cases get a match, the default block is executed:
+
+        $d = 4;
+
+        switch ($d) {
+            case 6:
+                echo "Today is Saturday";
+                break;
+            case 0:
+                echo "Today is Sunday";
+                break;
+            default:
+                echo "Looking forward to the Weekend";
+        }
+
+
+If you want multiple cases to use the same code block, you can specify the cases like this
+example ;
+    $d = 3;
+
+    switch ($d) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:  
+            echo "The weeks feels so long!";
+            break;
+        case 6:
+        case 0:
+            echo "Weekends are the best!";
+            break;
+        default:
+            echo "Something went wrong";
+    }
