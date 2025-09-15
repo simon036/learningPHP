@@ -1,0 +1,45 @@
+constants = are like variables, once defined they cannot be changes or undefined
+is an identifier(name)
+starts with a letter or underscore (no $ sign bfor constant name)
+are automaticaly global across entire script
+
+1. creating php constant 
+we use define() fn 
+    define(name , value)
+example ;  Create a constant with a case-sensitive name:
+
+    define("GREETING", "Welcome to W3Schools.com!");
+    echo GREETING;
+        // Welcome to W3Schools.com!
+
+2.const keyword
+example : Create a case-sensitive constant with the const keyword:
+
+    const MYCAR = "Volvo";
+    echo MYCAR;
+        //Volvo 
+NOTE :
+    const vs. define()
+    const cannot be created inside another block scope, like inside a function or inside an if statement.
+    define() can be created inside another block scope.
+
+
+CONSTANT ARRAYS 
+we use define() fn 
+Example :
+    define("cars", [
+        "Toyota",
+        "Golf",
+        "BMW"
+    ]);
+    echo cars[0];
+
+Constants are global and can be used across entire script
+example:
+    define("GREETING", "Welcome to W3Schools.com!");
+
+    function myTest() {
+    echo GREETING;
+    }
+
+    myTest();
