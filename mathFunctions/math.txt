@@ -1,0 +1,26 @@
+1. pi() fn == returns value of pi
+eg .  
+    echo(pi());
+ 
+2.min() and max() fn 
+    eg 
+        echo(min(0,10,40,300,-9,-450))
+        echo(max(0,10,40,300,-9,-450))
+
+3. abs() fn == returns ablolute(+ve )value of a number
+eg 
+    echo(abs(-6.7));
+
+4. sqrt() fn 
+eg .
+    echo(sqrt(64));
+
+5. round () fn 
+eg .
+    echo(round(0.50));
+    echo(round(0.29));
+
+6. rand() fn == generates random number 
+eg .
+    echo(rand())
+    

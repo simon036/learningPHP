@@ -1,0 +1,94 @@
+Numeric types  == Integers , floats , number strings
+more datatypes == infinity ,NaN
+
+numeric variables
+    $a = 5;
+    $b = 5.34;
+    $c = "25";
+
+to verify type 
+    var_dump($a);
+    var_dump($b);
+    var_dump($c);
+
+1. INTEGERS 
+is_int() fn = used to check if  type of a variable is an integer
+    $x = 5985;
+    var_dump(is_int($x));
+
+    $x = 59.85;
+    var_dump(is_int($x));
+
+rules for integers:
+
+    An integer must have at least one digit
+    An integer must NOT have a decimal point
+    An integer can be either positive or negative
+    Integers can be specified in three formats: decimal (base 10), hexadecimal (base 16 - prefixed with 0x), octal (base 8 - prefixed with 0) or binary (base 2 - prefixed with 0b)
+
+
+predefined constants for integers:
+
+PHP_INT_MAX - The largest integer supported
+PHP_INT_MIN - The smallest integer supported
+PHP_INT_SIZE -  The size of an integer in bytes
+
+2. FLOATS 
+is_float() fn == used to check if type of variable is a float
+
+    $x = 10.365;
+    var_dump(is_float($x));
+
+predefined constants for floats:
+
+PHP_FLOAT_MAX - The largest representable floating point number
+PHP_FLOAT_MIN - The smallest representable positive floating point number
+PHP_FLOAT_DIG - The number of decimal digits that can be rounded into a float and back without precision loss
+PHP_FLOAT_EPSILON - The smallest representable positive number x, so that x + 1.0 != 1.0
+
+3. INFINITY 
+is_finite() fn checks whether a value is finite or not 
+value is finit if its within the allowed range for a php float
+value is infinte if its outside allowed range for a php float
+
+    $x = 1.9e411;
+    var_dump(is_infinite($x));
+
+3. NaN
+Not a Number 
+used for imposinle math operations
+is_nan() fn =  used to check if a value is not a number
+
+    $x = acos(8);
+    var_dump($x);
+
+4. Numerical Strings
+is_numeric() fn == checks whether a variable is a number of a numeric string 
+fn returns true if variable is a number or a numeric string , false otherwise 
+        $x = 5985;
+        var_dump(is_numeric($x));
+
+        $x = "5985";
+        var_dump(is_numeric($x));
+        $x = "59.85" + 100;
+        var_dump(is_numeric($x));
+
+        $x = "Hello";
+        var_dump(is_numeric($x));
+
+5.  Casting Srings and Floats to integers
+(int), (integer), and intval() fn are often used to convert a value to an integer.
+Example :
+        Cast float and string to integer:
+
+            // Cast float to int
+            $x = 23465.768;
+            $int_cast = (int)$x;
+            echo $int_cast;
+
+            echo "<br>";
+
+            // Cast string to int
+            $x = "23465.768";
+            $int_cast = (int)$x;
+            echo $int_cast;
