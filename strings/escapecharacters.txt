@@ -1,0 +1,11 @@
+Escape character
+    used to  insert xters that are illegal in a string
+    defined by a backslash \ followed by xter you want to insert
+
+example;
+
+    $x = "We are the so-called "Vikings" from the north.";
+
+Now we use the escape character \ "
+
+    $x = "We are the so-called \"Vikings\" from the north.";   
