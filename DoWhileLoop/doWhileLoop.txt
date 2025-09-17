@@ -1,0 +1,57 @@
+Do while loop
+loops through code block once and repeats loop as long as condition is true
+
+example ;
+
+Print $i as long as $i is less than 6:
+
+        $i = 1;
+
+        do {
+            echo $i;
+            $i++;
+        } while ($i < 6);
+
+Note: In a do...while loop the condition is tested AFTER executing the statements within the loop. This means that the do...while loop will execute its statements at least once, even if the condition is false
+
+example ;
+Set $i = 8, then print $i as long as $i is less than 6:
+
+        $i = 8;
+
+        do {
+            echo $i;
+            $i++;
+        } while ($i < 6);
+code will be executed once ,even if condition is never true
+
+BREAK STATEMENT
+break ststement stops loop even if condition is still true
+    example ;
+        Stop the loop when $x is 3:
+
+        for ($x = 0; $x <= 10; $x++) {
+            if ($x == 3) break;
+            echo "The number is: $x <br>";
+        }
+
+continue statement
+With the continue statement we can stop the current iteration, and continue with the next
+
+Example
+    Stop, and jump to the next iteration if $x is 3:
+
+    for ($x = 0; $x <= 10; $x++) {
+        if ($x == 3) continue;
+        echo "The number is: $x <br>";
+    }
+
+Example
+    counts to 100 by tens:
+
+    Example
+    for ($x = 0; $x <= 100; $x+=10) {
+        echo "The number is: $x <br>";
+    }
+
+

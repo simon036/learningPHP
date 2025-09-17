@@ -1,7 +1,6 @@
-Nested if statements  == are if statements inside if statements
-
-Example;
-    $a = 13;
+// Nested if statements  == are if statements inside if statements
+<?php
+$a = 13;
 
     if ($a > 10) {
     echo "Above 10";
@@ -11,3 +10,4 @@ Example;
             echo " but not above 20";
         }
     }
+?>
