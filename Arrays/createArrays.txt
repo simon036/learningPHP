@@ -34,3 +34,24 @@ example;
     ];
 
 Declaring an empty array
+One can declare an empty array first and then add items to it later 
+example;
+    $cars = [];
+    $cars[0] = "Volvo";
+    $cars[1] = "BMW";
+    $cars[2] = "Toyota";
+
+same goes for associative arrays
+example ;
+    $myCar = [];
+    $myCar["brand"] = "Ford";
+    $myCar["model"] = "Mustang";
+    $myCar["year"] = 1964;
+
+mixing array keys
+we can have arrays with both indexed and named keys
+example;
+    $myArr = [];
+    $myArr[0] = "apples";
+    $myArr[1] = "bananas";
+    $myArr["fruit"] = "cherries";
