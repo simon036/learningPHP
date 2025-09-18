@@ -1,0 +1,27 @@
+Array = stores multiple values in one single variable 
+    and to access the values we use indexes
+
+example ;
+    $cars = array("Volvo", "BMW", "Toyota");
+
+three types of arrays ;
+
+    1. indexed arrays
+    2. associative arrays
+    3. multidimensional arrays 
+
+array items
+    most common are strings and numbers (int, float), but array items can also be objects, functions or even arrays
+    one can have diff data types in same array
+
+example;
+    $myArr = array("Volvo", 15, ["apples", "bananas"], myFunction);
+
+
+array functions 
+    eg count() fn 
+    example: 
+        How many items are in the $cars array?
+
+        $cars = array("Volvo", "BMW", "Toyota");
+        echo count($cars)

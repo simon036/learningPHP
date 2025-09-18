@@ -1,0 +1,39 @@
+Indexed array = each item has an index number 
+by default, first item has index 0 ...etc
+
+example;
+    $cars = array("Volvo", "BMW", "Toyota");
+    var_dump($cars);
+
+change value 
+to change value of an array item ,use index number 
+example;
+    Change the value of the second item:
+
+        $cars = array("Volvo", "BMW", "Toyota");
+        $cars[1] = "Ford";
+        var_dump($cars);
+
+looping through indexed array
+to loop through and print all values in indexed array we use 'foreach' loop 
+example;
+    Display all array items:
+
+        $cars = array("Volvo", "BMW", "Toyota");
+        foreach ($cars as $x) {
+        echo "$x <br>";
+        }
+
+    
+index number 
+New items get the next index number, meaning one higher than the highest existing index.
+
+    $cars[0] = "Volvo";
+    $cars[1] = "BMW";
+    $cars[2] = "Toyota";
+
+use the array_push() function to add a new item, the new item will get the index 3:
+
+Example;
+    array_push($cars, "Ford");
+    var_dump($cars);

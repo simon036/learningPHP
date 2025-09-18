@@ -1,0 +1,36 @@
+we create arrays using the array() fn 
+example;
+    $cars = array ("benz","bmw", "Toyota");
+
+we can also use the [] brackets
+        $cars = array ["benz","bmw", "Toyota"];
+
+multiple lines 
+    $cars = [
+        "Volvo",
+        "BMW",
+        "Toyota"
+    ];
+
+Array keys
+    When creating indexed arrays the keys are given automatically, 
+    starting at 0 and increased by 1 for each item
+
+    example :
+        $cars = [
+            0 => "Volvo",
+            1 => "BMW",
+            2 =>"Toyota"
+        ];
+
+Indexed arrays are the same as associative arrays,
+but associative arrays have names instead of numbers
+
+example;
+    $myCar = [
+        "brand" => "Ford",
+        "model" => "Mustang",
+        "year" => 1964
+    ];
+
+Declaring an empty array
