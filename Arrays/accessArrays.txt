@@ -1,0 +1,60 @@
+Assess arrays item
+To access an array item, you can refer to the index number for indexed arrays,
+and the key name for associative arrays.
+
+example :
+    $cars = array("Volvo", "BMW", "Toyota");
+    echo $cars[2];
+
+To access items from an associative array, use the key name:
+example ;
+    access and item by referring to its key name
+        $cars = array("brand" => "Ford", "model" => "Mustang", "year" => 1964);
+        echo $cars["year"]; 
+
+
+execute a fn item
+Array items can be of any data type, including function.
+
+To execute such a function, use the index number followed by parentheses ()
+
+        function myFunction() {
+            echo "I come from a function!";
+        }
+
+        $myArr = array("Volvo", 15, myFunction);
+
+        $myArr[2]();
+
+
+Use the key name when the function is an item in a associative array
+example ;
+        function myFunction() {
+            echo "I come from a function!";
+        }
+
+        $myArr = array("car" => "Volvo", "age" => 15, "message" => myFunction);
+
+        $myArr["message"]();
+
+
+loop through an associative array
+we can use 'foreach ' loop
+example:
+    Display all array items, keys and values:
+
+        $car = array("brand"=>"Ford", "model"=>"Mustang", "year"=>1964);
+
+        foreach ($car as $x => $y) {
+            echo "$x: $y <br>";
+        }
+
+loop through an indexed array
+we can use foreach loop 
+example:
+    Display all array items:
+
+        $cars = array("Volvo", "BMW", "Toyota");
+        foreach ($cars as $x) {
+            echo "$x <br>";
+        }

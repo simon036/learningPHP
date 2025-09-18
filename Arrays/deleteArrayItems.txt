@@ -1,0 +1,84 @@
+Removing array item
+
+use the array_splice() fn 
+with the array_splice() fn you specify index (where to start) and how many items you want to delete
+
+example:
+removing 2nd item
+    $cars = array("Volvo", "BMW", "Toyota");
+    array_splice($cars, 1, 1);
+
+After the deletion, the array gets reindexed automatically, starting at index 0.
+
+=======================================================================
+
+Using unset fn 
+use unset() fn to deleteexisting array items
+
+example;
+removing 2nd item 
+    $cars = array ("benz" , "bmw" , "toyota");
+    unset($cars[1]);
+
+========================================================
+
+Removing multiple array items 
+use array_splice() fn  == takes length parameter that allows one to specify no. of items to delete 
+example;
+    removing 2 items starting the 2nd item (index 1)
+
+        $cars = array("benz`", "BMW", "Toyota");
+        array_splice($cars, 1, 2);
+
+
+The unset() function takes a unlimited number of arguments, and can therefore be used to delete multiple array items:
+Example
+Remove the first and the second item:
+
+        $cars = array("Volvo", "BMW", "Toyota");
+        unset($cars[0], $cars[1]);
+
+==========================================================
+
+Remove Item From an Associative Array
+use unset( ) fn
+specify key of item you want to delete
+example;
+    Remove the "model":
+
+        $cars = array("brand" => "Ford", "model" => "Mustang", "year" => 1964);
+        unset($cars["model"]);
+
+=============================================================
+
+using array_dif fn
+use the array_diff() fn to remove items from an associative array
+fn returns a new array without specified items
+
+    Example
+    Create a new array, without "Mustang" and "1964":
+
+        $cars = array("brand" => "Ford", "model" => "Mustang", "year" => 1964);
+        $newarray = array_diff($cars, ["Mustang", 1964]);
+
+Note: The array_diff() function takes values as parameters, and not keys.
+
+==============================================================================
+
+Remove the Last Item
+use array_pop() fn to remove last item of an array
+example;
+    Remove the last item:
+
+        $cars = array("Volvo", "BMW", "Toyota");
+        array_pop($cars);
+
+============================================================ 
+Remove first item
+
+array_shift() fn
+
+example ;
+        $cars = array("Volvo", "BMW", "Toyota");
+        array_shift($cars);
+

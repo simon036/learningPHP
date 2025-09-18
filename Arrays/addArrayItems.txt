@@ -1,0 +1,37 @@
+Add Array Item
+we use the [] syntax
+example;
+    Add one more item to the fruits array:
+
+        $fruits = array("Apple", "Banana", "Cherry");
+        $fruits[] = "Orange";
+
+
+Associative arrays 
+To add items to an associative array, or key/value array,
+use brackets [] for the key, and assign value with the = operator
+
+example ;
+Add one item to the car array:
+
+    $cars = array("brand" => "Ford", "model" => "Mustang");
+    $cars["color"] = "Red";
+
+
+Adding multiple array items 
+to add multiple items to an existing array , use the array_push() fn
+
+example;
+adding 3 items to fruits array
+    $fruits = array("apples" , "banana" ,"cherry"); 
+    array_push($fruits , "orange", "kiwi" ," lemon");
+
+
+Adding multiple items to associative arrays
+ to add multiple items to existing array , use += operator
+
+example ;
+adding 2 items to cars array
+
+    $cars = array("brand" => "Ford", "model" => "Mustang");
+    $cars += ["color" => "red", "year" => 1964];
