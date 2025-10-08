@@ -31,6 +31,7 @@ $i = 1;
         echo $i;
         }
 ?>
+
 // or use endwhile to close the loop
 <?php //    Print $i as long as $i is less than 6:
 
