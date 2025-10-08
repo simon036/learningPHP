@@ -43,6 +43,7 @@
 <?php
     $x = "Simon";
     echo $x;
+    var_dump($x);
 ?>
 
 // assigning multiple  variables
@@ -54,6 +55,7 @@
 // booleans ==true or false
 <?php
     $name = True;
+    var_dump($name);
 ?>
 
 <?php

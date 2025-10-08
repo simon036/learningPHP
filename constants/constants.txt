@@ -1,4 +1,4 @@
-constants = are like variables, once defined they cannot be changes or undefined
+constants = are like variables, once defined they cannot be changed or undefined
 is an identifier(name)
 starts with a letter or underscore (no $ sign bfor constant name)
 are automaticaly global across entire script

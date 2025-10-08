@@ -8,10 +8,32 @@ example;
 
         echo $b
 
+        full if statement 
+        $a = 5 ;
+        if ($a < 10){
+                echo $b = "Hello";
+                
+        }
+
 short hand if/else
+
+$variable = (condition) ? value_if_true : value_if_false;
+
+
 example ;
         $a = 13;
 
         $b = $a < 10 ? "Hello" : "Good Bye";
 
         echo $b
+
+
+        full if/else
+
+        $a = 13;
+        if ($a < 10) {
+                echo "Hello";
+        else;
+                echo $b = "Goodbye";
+
+        }
